@@ -2,7 +2,7 @@ minetest.register_entity("unknown_object:unknown_object", {
     hp_max = 1,
     physical = true,
     weight = 5,
-    -- collisionbox = {-0.5,-0.5,-0.5, 0.5,0.5,0.5},
+    collisionbox = {-0.5,-0.5,-0.5, 0.5,0.5,0.5},
     visual = "sprite",
     visual_size = {x=0.8, y=0.8},
     textures = {"unknown_object.png"}, -- number of required textures depends on visual
