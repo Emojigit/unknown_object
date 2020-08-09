@@ -4,7 +4,7 @@ minetest.register_entity("unknown_object:unknown_object", {
     weight = 5,
     collisionbox = {-0.5,-0.5,-0.5, 0.5,0.5,0.5},
     visual = "sprite",
-    visual_size = {x=0.7, y=0.7},
+    visual_size = {x=0.8, y=0.8},
     textures = {"unknown_object.png"}, -- number of required textures depends on visual
     colors = {}, -- number of required colors depends on visual
     spritediv = {x=1, y=1},
