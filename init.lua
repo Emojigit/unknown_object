@@ -9,6 +9,11 @@ minetest.register_entity("unknown_object:unknown_object", {
     colors = {}, -- number of required colors depends on visual
     initial_sprite_basepos = {x=0, y=0},
     is_visible = true,
+    on_punch = function(self, puncher, time_from_last_punch, tool_capabilities, dir)
+        if puncher:is_player() then
+            puncher:get_inventory():add_item("main", "unknown_object:unknown_object_spawner 1")
+        end
+    end
 })
 
 minetest.register_craftitem("unknown_object:unknown_object_spawner", {
