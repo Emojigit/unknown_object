@@ -13,6 +13,9 @@ minetest.register_entity("unknown_object:unknown_object", {
         if puncher:is_player() then
             puncher:get_inventory():add_item("main", "unknown_object:unknown_object_spawner 1")
         end
+        minetest.after(0.1, function()
+		self.object:remove()
+	end)
     end
 })
 
